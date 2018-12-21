@@ -1,0 +1,197 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+header {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4f5d75;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    width: 100%;
+    text-align: center;
+}
+
+@media all and (min-width: 479px) {
+    header {
+      font-size: 2em;
+    }
+  }
+  
+  @media all and (min-width: 760px) {
+    header {
+      font-size: 2.5em;
+    }
+  }
+  
+  @media all and (min-width: 960px) {
+    header {
+      font-size: 3em;
+    }
+  }
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  h1 {
+    color: #4F5D75;
+    font-family: 'Black Han Sans', sans-serif;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media all and (min-width: 479px) {
+    h1 {
+      font-size: 2.3em;
+    }
+  }
+  
+  @media all and (min-width: 760px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media all and (min-width: 960px) {
+    h1 {
+      font-size: 1.7em;
+    }
+  }
+
+  h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4F5D75;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media all and (min-width: 479px) {
+    h2 {
+      font-size: 2em;
+    }
+  }
+  
+  @media all and (min-width: 760px) {
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+  
+  @media all and (min-width: 960px) {
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+  
+  h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4F5D75;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    margin-top: .5em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media all and (min-width: 479px) {
+    h3, h4, h5, h6 {
+      font-size: 1em;
+    }
+  }
+  
+  @media all and (min-width: 760px) {
+    h3, h4, h5, h6 {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media all and (min-width: 960px) {
+    h3, h4, h5, h6 {
+      font-size: 1.3em;
+    }
+  }
+
+
+  p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: .5em;
+    margin: 0;
+    text-align: center;
+    color: #EF8354;
+  }
+  
+  nav ul li {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    color: #BFC0C0;
+  }
+  
+  @media all and (min-width: 479px) {
+    nav ul li {
+      font-size: 1em;
+    }
+  }
+  
+  @media all and (min-width: 760px) {
+    nav ul li {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media all and (min-width: 960px) {
+    nav ul li {
+      font-size: 1.2em;
+    }
+  }
+  
+  nav ul a, nav ul a:hover {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0 0.5em 1em;
+    border: thin solid #2d3142;
+    font-weight: bold;
+  }
+  
+  nav ul a:visited {
+    color: #2d3142;
+  }
+  
+  nav ul a:hover {
+    background-color: #F0F0F0;
+    color: #EF8354;
+  }
+  
+  nav ul li#iamhere a,
+  nav ul li#iamhere a:link,
+  nav ul li#iamhere a:visited, nav ul li#iamhere a:hover {
+    color: #4F5D75;
+    /*White */
+    background-color: #f0f0f0;
+    border: thin solid #2d3142;
+    /*Dark Blue*/
+  }
+  
+  .message {
+      border-radius: 30px;
+      padding: 10px;
+      position: relative;
+  }
+
+  .message.to {
+    background-color: green;
+    color: white;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.message.from {
+    background-color: lightgray;
+    color: black;
+    margin-right: 100px;
+}

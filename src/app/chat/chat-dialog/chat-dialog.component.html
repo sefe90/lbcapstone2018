@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--Sources used angular and angularfirebase. All sources in Readme Doc-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img src="assets/icons/android-chrome-512x512.png" width="225px" alt="Little Bits Logo">
+  <div style="text-align: center">
+    <h2>Just ask BitzBot:</h2>
+  </div>
+<ng-container *ngFor="let message of messages | async">
+  <div class ="message" [ngClass]="{ 'from': message.sentBy ==='bitsbot', 'to': message.sentBy === 'user' }">
+      {{ message.content }}
+  </div>
+</ng-container>
+<!--user input using Angular's ng format-->
+<label for="name">You:</label>
+<div class="textbox">
+  <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+</div>
+<button (click)="sendMessage()">Send</button>
+
+<!--<router-outlet></router-outlet>-->
+<!--<chat-dialog></chat-dialog> -->
